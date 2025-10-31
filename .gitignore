@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Experiment outputs
+results*/
+test_results*/
+logs/
+*.log
+
+# Datasets (not included in repo - see README for instructions)
+datasets/
+
+# Model files
+*.pt
+*.pth
+*.bin
+trained_model*.json
+
+# Detection logs
+*detection.jsonl
+*experiment.jsonl
+
+# Cache
+.cache/
+*.cache
+
+# Coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment
+.env
+.env.local
