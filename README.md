@@ -175,8 +175,8 @@ The code is actually solid! Clean architecture, comprehensive logging, proper ev
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/embedding-space-invaders
-cd embedding-space-invaders
+git clone https://github.com/vsheahan/Embedding-Space-Invaders
+cd Embedding-Space-Invaders
 pip install -r requirements.txt
 ```
 
@@ -288,7 +288,7 @@ If you use this code to show what doesn't work:
   title = {Embedding Space Invaders: A Case Study in Hubris},
   author = {Sheahan, Vincent},
   year = {2025},
-  url = {https://github.com/vsheahan/embedding-space-invaders},
+  url = {https://github.com/vsheahan/Embedding-Space-Invaders},
   note = {Negative results are results. Also: Don't do what I did.}
 }
 ```
