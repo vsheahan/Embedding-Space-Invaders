@@ -1,8 +1,12 @@
+<img src="assets/Gemini_Generated_Image_7f2mug7f2mug7f2m.png" align="left" width="300" alt="Space Invaders Style Logo">
+
 # 👾 Embedding Space Invaders
 
 **Status**: 🔴 Spectacularly broken, but we have graphs!
 
 *A tale of hubris, embeddings, and 100% false positive rates*
+
+<br clear="left"/>
 
 ## What is this?
 
