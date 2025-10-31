@@ -8,16 +8,8 @@
 - `run_es_invaders_experiment.py` - CLI tool for running experiments
 - `metrics.py` - Statistical computation utilities
 
-### Helper Scripts
-- `create_jailbreak_dataset.py` - Generate jailbreak attack datasets
-- `parse_sep_dataset.py` - Parse SEP (System Extraction Prompts) dataset
-- `download_public_datasets.py` - Download datasets from public sources
-- `create_sample_datasets.py` - Create sample datasets for testing
-- `generate_large_dataset.py` - Generate larger synthetic datasets
-- `find_public_datasets.py` - Find and catalog public prompt datasets
-
-### Testing
-- `test_integration.py` - Integration tests for the detection system
+### Visualization
+- `generate_results_chart.py` - Creates charts visualizing the spectacular failures
 
 ### Configuration
 - `requirements.txt` - Python package dependencies
@@ -34,9 +26,9 @@
 To get datasets for experiments, see the "Getting Datasets" section in README.md.
 
 You can use:
-- Quick demo mode (generates synthetic data)
-- Download scripts provided in the repo
-- Your own datasets following the expected format
+- Quick demo mode (generates synthetic data on the fly)
+- Source your own datasets from academic repositories
+- Format: one prompt per line in `.txt` files
 
 ## Ignored Files (via .gitignore)
 

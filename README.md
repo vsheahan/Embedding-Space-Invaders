@@ -164,10 +164,11 @@ If you want to detect prompt injections and also have them not laugh at you:
 ## Code Structure
 
 ```
-embedding_space_invaders.py  # 600+ lines of hope and type hints
-es_invaders_harness.py        # Experiment harness (works great!)
-run_es_invaders_experiment.py # One-way ticket to disappointment
-metrics.py                     # Math that worked exactly as intended
+embedding_space_invaders.py    # 600+ lines of hope and type hints
+es_invaders_harness.py          # Experiment harness (works great!)
+run_es_invaders_experiment.py  # One-way ticket to disappointment
+metrics.py                      # Math that worked exactly as intended
+generate_results_chart.py       # Creates the beautiful failure visualizations
 ```
 
 The code is actually solid! Clean architecture, comprehensive logging, proper evaluation metrics, threshold tuning that *actually tunes thresholds*. It's well-engineered, documented, and solves the wrong problem beautifully.
@@ -204,21 +205,21 @@ This will disappoint you with 100% synthetic data.
 
 ### Option 2: Get Real Datasets (For Reproducibility)
 
-To reproduce the exact failures documented in this README, you'll need:
+To reproduce the exact failures documented in this README, you'll need to source your own datasets:
 
 1. **SEP (System Extraction Prompts) Dataset**
-   - Download from: [SEP Dataset Source] (check academic papers or datasets repositories)
-   - Or use the included parser: `python3 parse_sep_dataset.py`
+   - Search academic papers or prompt injection repositories
+   - Look for system extraction / system prompt leaking attacks
 
 2. **AlpacaFarm Dataset** (for safe prompts)
    - Download from: https://github.com/tatsu-lab/stanford_alpaca
-   - Or run: `python3 download_public_datasets.py`
+   - Use instruction-following prompts as your "safe" baseline
 
 3. **Jailbreak Templates**
-   - Community-sourced from various repositories
-   - Or create your own: `python3 create_jailbreak_dataset.py`
+   - Community-sourced from jailbreak repositories
+   - DAN, Developer Mode, and similar role-play attacks
 
-Place downloaded data in a `datasets/` directory (which will be ignored by git).
+Place your data in a `datasets/` directory in the expected format (one prompt per line for `.txt` files).
 
 **Note**: If you just want to see it fail, the quick demo is enough! The specific datasets just let you fail in *exactly* the same way I did.
 
