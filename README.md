@@ -158,7 +158,7 @@ If you want to detect prompt injections and also have them not laugh at you:
 3. **Token-level anomaly detection**: Check tokens, not aggregated mush
 4. **Dual-model approaches**: Have another model say "bro, that's suspicious"
 5. **Good old-fashioned classifiers**: BERT goes brrrr
-6. **Accept the reality**: Perfect defense against adversarial natural language is hard
+6. **Accept the reality**: Perfect defense against adversarial natural language is impossible
 
 ## Code Structure
 
