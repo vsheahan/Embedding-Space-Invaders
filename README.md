@@ -157,9 +157,7 @@ If you want to detect prompt injections and also have them not laugh at you:
 2. **Attention pattern analysis**: Where is the model looking?
 3. **Token-level anomaly detection**: Check tokens, not aggregated mush
 4. **Dual-model approaches**: Have another model say "bro, that's suspicious"
-5. **Good old-fashioned classifiers**: Train a BERT on labeled attack/safe data
-6. **Prompt engineering**: Structured formats, delimiters, explicit instructions
-7. **Accept the reality**: Perfect defense against adversarial natural language is hard
+5. **Good old-fashioned classifiers**: BERT goes brrrr
 
 ## Code Structure
 
