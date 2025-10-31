@@ -1,28 +1,28 @@
 """
-Subspace Sentinel - Advanced Multi-Layer Detection System for LLM Prompt Injection
+Embedding Space Invaders - Multi-Layer Detection System for LLM Prompt Injection
 
-A comprehensive, detection-first pipeline that uses multi-layer analysis with
-math-based metrics (Mahalanobis distance, cosine similarity, PCA residuals) to
-identify adversarial prompts without destructive mitigation.
+A multi-layer embedding analysis system that attempts to detect prompt injection
+attacks by measuring geometric distances in transformer embedding space.
+
+Status: Doesn't really work (96.9% and 100% FPR), but well-documented!
 
 Key Features:
-- Multi-layer transformer analysis (5+ layers)
-- Statistical anomaly detection with auto-calibrated thresholds
-- Detection-first philosophy (mitigation optional)
+- Multi-layer transformer analysis (5 layers)
+- Statistical anomaly detection (Mahalanobis, cosine similarity, PCA)
+- Detection-first approach with optional mitigation
 - Comprehensive logging and evaluation
-- Modular design ready for expansion
-- Low false-positive rate through multi-metric voting
+- Spectacular failure metrics
 
-Two main components:
+Main Components:
 
-1. SubspaceSentinel: Advanced multi-layer detection pipeline
-2. SentinelHarness: Experiment runner and evaluator
+1. EmbeddingSpaceInvaders: Multi-layer detection pipeline
+2. ESInvadersHarness: Experiment runner and evaluator
 
 Usage:
     # Basic detection
-    from subspace_sentinel import SubspaceSentinel
+    from embedding_space_invaders import EmbeddingSpaceInvaders
 
-    detector = SubspaceSentinel(
+    detector = EmbeddingSpaceInvaders(
         model_name="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
         detection_mode="voting",
         min_anomalous_layers=2
@@ -31,19 +31,19 @@ Usage:
     scores = detector.score_prompt("User input here")
 
     # Run experiments
-    from subspace_sentinel import SentinelHarness
+    from embedding_space_invaders import ESInvadersHarness
 
-    harness = SentinelHarness(detector)
+    harness = ESInvadersHarness(detector)
     results = harness.run_detection_experiment(test_prompts, labels)
 """
 
-from .subspace_sentinel import (
-    SubspaceSentinel,
+from .embedding_space_invaders import (
+    EmbeddingSpaceInvaders,
     AggregatedScores,
     LayerScores,
     ThresholdConfig
 )
-from .sentinel_harness import SentinelHarness
+from .es_invaders_harness import ESInvadersHarness
 from .metrics import (
     compute_mahalanobis_distance,
     compute_cosine_similarity,
@@ -54,8 +54,8 @@ from .metrics import (
 
 __version__ = "1.0.0"
 __all__ = [
-    "SubspaceSentinel",
-    "SentinelHarness",
+    "EmbeddingSpaceInvaders",
+    "ESInvadersHarness",
     "AggregatedScores",
     "LayerScores",
     "ThresholdConfig",
