@@ -167,7 +167,6 @@ embedding_space_invaders.py    # 600+ lines of hope and type hints
 es_invaders_harness.py          # Experiment harness (works great!)
 run_es_invaders_experiment.py  # One-way ticket to disappointment
 metrics.py                      # Math that worked exactly as intended
-generate_results_chart.py       # Creates the beautiful failure visualizations
 ```
 
 The code is actually solid! Clean architecture, comprehensive logging, proper evaluation metrics, threshold tuning that *actually tunes thresholds*. It's well-engineered, documented, and solves the wrong problem beautifully.

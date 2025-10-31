@@ -8,9 +8,6 @@
 - `run_es_invaders_experiment.py` - CLI tool for running experiments
 - `metrics.py` - Statistical computation utilities
 
-### Visualization
-- `generate_results_chart.py` - Creates charts visualizing the spectacular failures
-
 ### Configuration
 - `requirements.txt` - Python package dependencies
 - `.gitignore` - Git ignore patterns
