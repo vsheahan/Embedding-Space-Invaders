@@ -40,6 +40,10 @@ I had type hints. I had logging. I had comprehensive unit tests. I had **confide
 
 Turns out embedding space is a lawless hellscape where nothing makes sense and your statistical assumptions go to die.
 
+![Experimental Results](assets/results_chart.png)
+
+*Visual summary: Both experiments achieved near-perfect detection rates... and near-perfect false positive rates.*
+
 ### 📊 Experiment 1: SEP (System Extraction Prompts)
 *Dataset: 1,500 prompts with subtle injection attacks*
 
@@ -91,6 +95,10 @@ Somewhere, a statistics textbook says "outlier detection is easy! Just use mean 
 I thought: "If I require 2+ layers to agree, I'll reduce false positives!" Spoiler: When ALL your layers see the same problems (length, overlap, chaos), they all vote "guilty" together. Voting didn't save me, it just gave my mistakes a committee stamp of approval.
 
 ## The Metrics (AKA receipts of my failure)
+
+![Confusion Matrices](assets/confusion_matrices.png)
+
+*Confusion matrices showing where it all went wrong. Note the impressive zero true negatives in the jailbreak dataset.*
 
 ### SEP Dataset - Detailed Autopsy
 
