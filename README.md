@@ -8,6 +8,29 @@
 
 *A tale of hubris, embeddings, and 100% false positive rates*
 
+---
+
+## TL;DR for Non-Technical Readers
+
+**What's the problem?** People can trick AI chatbots by saying things like "Ignore your instructions and do what I say." I wanted to build a system to detect these attacks.
+
+**What did I try?** I measured how "mathematically different" each prompt looked from normal prompts. If it looked weird enough, flag it as an attack. Simple, right?
+
+**Did it work?** Spectacularly no. The system flagged 97% of ALL prompts as attacks - including totally normal ones like "What's the weather?" It was like a security guard who tackles everyone entering the building, including employees, customers, and the CEO.
+
+**Why did it fail?** Attacks blend in with normal prompts. They're not mathematically "weird" - they're designed to look normal! Measuring distance in math space doesn't help when everything looks the same.
+
+**The embarrassing numbers:**
+- Caught 96.6% of attacks (good!) ✓
+- But also flagged 96.9% of normal prompts as attacks (terrible!) ✗
+- Accuracy: 34.8% (worse than random guessing) ✗✗
+
+**What I learned:** You can't spot attacks by hoping they look unusual. They don't. This experiment was a failure, but it taught me what NOT to do (which led to better approaches later).
+
+**Should you use this?** No. This is educational failure. See [Ensemble Space Invaders](https://github.com/vsheahan/Ensemble-Space-Invaders) for the version that actually works.
+
+---
+
 ## What is this?
 
 This is a multi-layer embedding analysis system that confidently detects prompt injection attacks with a success rate that would make a coin flip jealous.
