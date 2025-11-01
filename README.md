@@ -25,9 +25,9 @@
 - But also flagged 96.9% of normal prompts as attacks (terrible!) ✗
 - Accuracy: 34.8% (worse than random guessing) ✗✗
 
-**What I learned:** You can't spot attacks by hoping they look unusual. They don't. This experiment was a failure, but it taught me what NOT to do (which led to better approaches later).
+**What I learned:** You can't spot attacks by hoping they look unusual. They don't. This experiment was a failure, but it taught me what NOT to do (which led to better experimental approaches later).
 
-**Should you use this?** No. This is educational failure. See [Ensemble Space Invaders](https://github.com/vsheahan/Ensemble-Space-Invaders) for the version that actually works.
+**What this is:** An educational failure documenting my first attempt at using mathematical distance metrics to detect prompt injections. This is experimental research - me learning how LLMs work by trying things that don't work. Part of a three-experiment journey ([see all experiments](https://github.com/vsheahan/Space-Invaders-Vector-Command)).
 
 ---
 
